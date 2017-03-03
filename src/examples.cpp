@@ -16,7 +16,7 @@ void simple() {
     // A benchmark suite that does only time measurement
     geiger::suite<> s;
 
-    s.add("R::rnorm",
+    s.add("R::runif",
           []() {
               //std::rand();
               R::runif(0, RAND_MAX);
