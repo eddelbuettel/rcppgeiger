@@ -8,11 +8,11 @@ C++14 Micro-Benchmarking for R via Rcpp
 This package brings the [geiger](https://github.com/david-grs/geiger) C++14
 micro-benchmarking library to R.
 
-It requires a C++14 compiler. It may go to [CRAN](https://cram.r-project.org) once R 3.4.0
+Note that using it requires a C++14 compiler. It may go to [CRAN](https://cram.r-project.org) once R 3.4.0
 is released as this will bring support for C++14 compilation to R.
 
 It can make use of the PAPI interface via e.g. `libpapi-dev` on Debian or Ubuntu.  The
-default is to build without PAPI unless enable.  We plan to make this an automatic
+default is to build without PAPI unless enabled.  We plan to make this an automatic
 detection via `configure`.
 
 ## Examples
@@ -60,7 +60,7 @@ Running this from R shows the following outpu on my laptop:
 R> simple()
 Test                    Iterations    ns / iteration
 ----------------------------------------------------
-R::rnorm               109,254,138                 9
+R::runif               109,254,138                 9
 vector push_back        18,143,368                55
 R> 
 ```
@@ -151,7 +151,9 @@ R>
 
 The package is not yet on [CRAN](https://cran.r-project.org) and must
 be installed from the repository.  For now cloning and installing
-locally may be easiest.  Of cource 
+locally may be easiest.  
+
+Of course 
 
 ```r
 R> remotes::install_github("eddelbuettel/rcppgeiger")
@@ -161,8 +163,9 @@ works as well.
 
 ### Status
 
-Pretty new. Expect changes. Several TODO items (such as collecting
-data and bringing it back to R).
+The pacage is pretty new and raw. Expect changes. 
+
+There are several TODO items (such as collecting data and bringing it back to R).
 
 ### Author
 
@@ -171,5 +174,3 @@ Dirk Eddelbuettel
 ### License
 
 GPL (>= 2)
-
-
