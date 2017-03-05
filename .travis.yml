@@ -15,7 +15,7 @@ before_install:
   - ./run.sh bootstrap
 
 install:
-  - ./run.sh install_aptget r-cran-rcpp
+  - ./run.sh install_aptget r-cran-rcpp r-cran-bh
   - sudo apt-get install -y gcc-6 g++-6
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-6
   
