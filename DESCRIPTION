@@ -13,5 +13,5 @@ SystemRequirements: A C++14 compiler. If available, libpapi can be used for
  processors. On Debian and Ubuntu, libpapi-dev provides this library.
 License: GPL (>= 2)
 Imports: Rcpp
-LinkingTo: Rcpp
+LinkingTo: Rcpp, BH
 RoxygenNote: 6.0.1
