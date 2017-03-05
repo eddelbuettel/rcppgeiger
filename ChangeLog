@@ -1,3 +1,7 @@
+2017-03-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Added, with g++-6 as default for C++14
+
 2017-03-03  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Added
