@@ -163,9 +163,9 @@ works as well.
 
 ### Status
 
-The pacage is pretty new and raw. Expect changes. 
+The package is pretty new and raw. Expect changes. 
 
-There are several TODO items (such as collecting data and bringing it back to R).
+There are several TODO items (such as collecting data and bringing it back to R) which should be listed as well.
 
 ### Author
 
