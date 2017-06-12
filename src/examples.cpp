@@ -6,7 +6,7 @@
 
 //' Simple microbenchmarking examples
 //'
-//' @title Simple 'Geiger' micro-benchmarking examples 
+//' @title Simple 'Geiger' micro-benchmarking examples
 //' @return None
 // [[Rcpp::export]]
 void simple() {
@@ -84,9 +84,10 @@ void walk() {
 #endif
 
     s.add("linear walk", linear_walk())
-     .add("random walk", random_walk())
-     .set_printer<geiger::printer::console<>>()
-     .run(size / batch);
+     .add("random walk", random_walk());
+    // .set_printer<geiger::printer::console<>>()
+    s.set_printer(geiger::printer::csv("/tmp/foo.csv", ','));
+    s.run(size / batch);
 
     //return 0;
 }

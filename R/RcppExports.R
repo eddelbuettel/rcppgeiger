@@ -3,7 +3,7 @@
 
 #' Simple microbenchmarking examples
 #'
-#' @title Simple 'Geiger' micro-benchmarking examples 
+#' @title Simple 'Geiger' micro-benchmarking examples
 #' @return None
 simple <- function() {
     invisible(.Call('RcppGeiger_simple', PACKAGE = 'RcppGeiger'))

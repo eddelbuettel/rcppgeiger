@@ -1,9 +1,9 @@
 
-## This is a C++11 package
-CXX_STD = CXX11
+## This is a C++14 package
+CXX_STD = CXX14
 
 ## We need the header in inst/include
-PKG_CPPFLAGS = -I../inst/include/ -std=c++14
+PKG_CPPFLAGS = -I../inst/include/ 
 
 ## You can use PAPI (if libpapi is installed) for more granular results
 #PKG_LIBS = -lpapi

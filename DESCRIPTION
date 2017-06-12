@@ -2,15 +2,16 @@ Package: RcppGeiger
 Type: Package
 Title: 'Rcpp' Bindings for 'Geiger' Header-Only Micro-Benchmark Framework
 Version: 0.0.1
-Date: 2017-03-02
+Date: 2017-06-12
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: The 'Geiger' Header-Only C++11 Micro-Benchmarks Framework,
  written by David Grosss and released under the MIT license, is provided
  for use by R packages through lightweight integration with 'Rcpp'.
-SystemRequirements: A C++14 compiler. If available, libpapi can be used for
- its 'Performance Application Programming Interface (PAPI)' on suitable
+SystemRequirements: C++14. If available, libpapi can be used for its
+ 'Performance Application Programming Interface (PAPI)' on suitable
  processors. On Debian and Ubuntu, libpapi-dev provides this library.
+Depends: R (>= 3.4.0)
 License: GPL (>= 2)
 Imports: Rcpp
 LinkingTo: Rcpp, BH

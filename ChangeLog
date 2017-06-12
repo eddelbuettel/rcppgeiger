@@ -1,3 +1,12 @@
+2017-06-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/Makevars (CXX_STD): Now a C++14 package
+
+	* src/RcppExports.cpp: Recreated under Rcpp 0.12.11
+	* R/RcppExports.R: Ditto
+
+	* DESCRIPTION (Date): Updated
+
 2017-03-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml: Added, with g++-6 as default for C++14

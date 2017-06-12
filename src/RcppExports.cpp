@@ -23,3 +23,14 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
+
+static const R_CallMethodDef CallEntries[] = {
+    {"RcppGeiger_simple", (DL_FUNC) &RcppGeiger_simple, 0},
+    {"RcppGeiger_walk", (DL_FUNC) &RcppGeiger_walk, 0},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_RcppGeiger(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+}
