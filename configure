@@ -12,6 +12,6 @@
 if [[ "${CI}" == "true" ]]; then
     if [[ "${TRAVIS}" == "true" ]]; then 
         echo "** Overriding src/Makevars and removing C++14 on Travis only"
-        perl -pie perl -pie -e's|CXX_STD = CXX14||' src/Makevars
+        sed -i 's|CXX_STD = CXX14||' src/Makevars
     fi
 fi
