@@ -8,7 +8,7 @@ C++14 Micro-Benchmarking for R via Rcpp
 This package brings the [geiger](https://github.com/david-grs/geiger) C++14
 micro-benchmarking library to R.
 
-Note that using it requires a C++14 compiler. It may go to [CRAN](https://cram.r-project.org) once R 3.4.0
+Note that using it requires a C++14 compiler. It may go to [CRAN](https://cran.r-project.org) once R 3.4.0
 is released as this will bring support for C++14 compilation to R.
 
 It can make use of the PAPI interface via e.g. `libpapi-dev` on Debian or Ubuntu.  The

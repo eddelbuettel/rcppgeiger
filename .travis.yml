@@ -6,6 +6,12 @@ sudo: required
 
 dist: trusty
 
+env:
+  global:
+    - CXX14 = g++
+    - CXX14FLAGS = -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2
+    - CXX14PICFLAGS = -fpic
+
 before_install:
   - curl -OLs https://eddelbuettel.github.io/r-travis/run.sh && chmod 0755 run.sh
   # optionally add our launchpad repo, but not needed here
