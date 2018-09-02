@@ -1,3 +1,7 @@
+2018-09-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Switch Travis CI to R 3.5 repo
+
 2017-06-12  Dirk Eddelbuettel  <edd@debian.org>
 
 	* src/Makevars (CXX_STD): Now a C++14 package
