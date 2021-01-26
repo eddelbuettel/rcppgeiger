@@ -1,7 +1,7 @@
 
-## RcppGeiger
+## RcppGeiger: C++14 Micro-Benchmarking for R via Rcpp
 
-C++14 Micro-Benchmarking for R via Rcpp
+[![CI](https://github.com/eddelbuettel/rcppgeiger/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rcppgeiger/actions?query=workflow%3Aci)
 
 ## About
 
