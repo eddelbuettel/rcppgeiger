@@ -1,3 +1,11 @@
+2021-08-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date): Roll date
+
+	* configure: Use basic shell syntax
+
+	* DESCRIPTION (OS_type): Restrict to unix
+
 2021-01-25  Dirk Eddelbuettel  <edd@debian.org>
 
         * .github/workflows/ci.yaml: Add CI runner using r-ci
