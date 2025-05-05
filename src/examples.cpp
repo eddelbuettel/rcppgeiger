@@ -2,7 +2,7 @@
 
 #include <Rcpp.h>
 
-#if !defined(__APPLE__)
+#if !defined(__APPLE__) && !defined(__arm__)
 #include "geiger/geiger.h"
 #endif
 
@@ -12,7 +12,7 @@
 //' @return None
 // [[Rcpp::export]]
 void simple() {
-#if !defined(__APPLE__)
+#if !defined(__APPLE__) && !defined(__arm__)
     geiger::init();
 
     // A benchmark suite that does only time measurement
@@ -41,7 +41,7 @@ void simple() {
 }
 
 
-#if !defined(__APPLE__)
+#if !defined(__APPLE__) && !defined(__arm__)
 static const int size = 1024 * 1024 * 16;
 static const int batch = 64;
 static const int mask = size - 1;
@@ -78,7 +78,7 @@ auto random_walk() {
 //' @rdname simple
 // [[Rcpp::export]]
 void walk() {
-#if !defined(__APPLE__)
+#if !defined(__APPLE__) && !defined(__arm__)
     geiger::init();
 
 #ifdef USE_PAPI

@@ -3,7 +3,7 @@
 	* DESCRIPTION (Version, Date): Roll micro version and date
 
 	* src/examples.cpp: Compilation is now conditional on not being on
-	macOS where it cannot work
+	macOS or arm64 as it cannot work on either
 
 	* src/Makevars: No longer set C++14 standard
 
