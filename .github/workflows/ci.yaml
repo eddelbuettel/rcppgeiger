@@ -14,9 +14,11 @@ jobs:
     strategy:
       matrix:
         include:
+          #- {os: macOS-13}
           #- {os: macOS-latest}
           - {os: ubuntu-latest}
-
+          - {os: ubuntu-24.04-arm}
+          
     runs-on: ${{ matrix.os }}
 
     steps:
