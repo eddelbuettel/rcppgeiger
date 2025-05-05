@@ -1,5 +1,7 @@
 2025-05-04  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
 	* src/examples.cpp: Compilation is now conditional on not being on
 	macOS where it cannot work
 

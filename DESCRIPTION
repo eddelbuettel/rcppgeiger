@@ -1,8 +1,8 @@
 Package: RcppGeiger
 Type: Package
 Title: 'Rcpp' Bindings for 'Geiger' Header-Only Micro-Benchmark Framework
-Version: 0.0.1
-Date: 2021-08-17
+Version: 0.0.1.1
+Date: 2025-05-04
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: The 'Geiger' Header-Only C++11 Micro-Benchmarks Framework,
