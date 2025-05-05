@@ -1,7 +1,4 @@
 
-## This is a C++14 package
-CXX_STD = CXX14
-
 ## We need the header in inst/include
 PKG_CPPFLAGS = -I../inst/include/ 
 

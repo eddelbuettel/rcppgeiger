@@ -1,3 +1,7 @@
+2025-05-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/Makevars: No longer set C++14 standard
+
 2024-04-02  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v4,
