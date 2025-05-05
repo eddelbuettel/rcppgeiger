@@ -1,5 +1,5 @@
 
-## RcppGeiger: C++14 Micro-Benchmarking for R via Rcpp
+## RcppGeiger: Micro-Benchmarking for R via Rcpp
 
 [![CI](https://github.com/eddelbuettel/rcppgeiger/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rcppgeiger/actions?query=workflow%3Aci)
 
@@ -8,12 +8,12 @@
 This package brings the [geiger](https://github.com/david-grs/geiger) C++14
 micro-benchmarking library to R.
 
-Note that using it requires a C++14 compiler. It may go to [CRAN](https://cran.r-project.org) once R 3.4.0
-is released as this will bring support for C++14 compilation to R.
-
 It can make use of the PAPI interface via e.g. `libpapi-dev` on Debian or Ubuntu.  The
 default is to build without PAPI unless enabled.  We plan to make this an automatic
 detection via `configure`.
+
+Note that [geiger](https://github.com/david-grs/geiger) does not build on either macOS, 
+or non-amd64Linux architectures.
 
 ## Examples
 

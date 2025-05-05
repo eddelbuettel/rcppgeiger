@@ -5,7 +5,15 @@
 	* src/examples.cpp: Compilation is now conditional on not being on
 	macOS or arm64 as it cannot work on either
 
+	* README.md: Small updates removed no-longer needed C++14 language,
+	clarify project is mostly for amd64 architecture
+
 	* src/Makevars: No longer set C++14 standard
+	* configure: Removed no longer require C++14 check for Travis
+	* .travis.yml: Removed long-obsolete setup
+
+	* .github/workflows/ci.yaml: Switch to r-ci action with bootstrap,
+	add log dumping step in failure case
 
 2024-04-02  Dirk Eddelbuettel  <edd@debian.org>
 
