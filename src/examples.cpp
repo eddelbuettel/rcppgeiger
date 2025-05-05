@@ -2,7 +2,9 @@
 
 #include <Rcpp.h>
 
+#if !defined(__APPLE__)
 #include "geiger/geiger.h"
+#endif
 
 //' Simple microbenchmarking examples
 //'
@@ -10,7 +12,7 @@
 //' @return None
 // [[Rcpp::export]]
 void simple() {
-
+#if !defined(__APPLE__)
     geiger::init();
 
     // A benchmark suite that does only time measurement
@@ -35,10 +37,11 @@ void simple() {
     s.run();
 
     //return 0;
+#endif    
 }
 
 
-
+#if !defined(__APPLE__)
 static const int size = 1024 * 1024 * 16;
 static const int batch = 64;
 static const int mask = size - 1;
@@ -70,11 +73,12 @@ auto random_walk() {
         }
     };
 }
-
+#endif
 
 //' @rdname simple
 // [[Rcpp::export]]
 void walk() {
+#if !defined(__APPLE__)
     geiger::init();
 
 #ifdef USE_PAPI
@@ -90,4 +94,5 @@ void walk() {
     s.run(size / batch);
 
     //return 0;
+#endif
 }

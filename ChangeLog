@@ -1,5 +1,8 @@
 2025-05-04  Dirk Eddelbuettel  <edd@debian.org>
 
+	* src/examples.cpp: Compilation is now conditional on not being on
+	macOS where it cannot work
+
 	* src/Makevars: No longer set C++14 standard
 
 2024-04-02  Dirk Eddelbuettel  <edd@debian.org>
