@@ -1,3 +1,7 @@
+2026-01-10  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (SystemRequirements): Remove C++14 requirement
+
 2025-05-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll micro version and date

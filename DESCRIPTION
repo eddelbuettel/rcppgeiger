@@ -8,7 +8,7 @@ Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: The 'Geiger' Header-Only C++11 Micro-Benchmarks Framework,
  written by David Grosss and released under the MIT license, is provided
  for use by R packages through lightweight integration with 'Rcpp'.
-SystemRequirements: C++14. If available, libpapi can be used for its
+SystemRequirements: If available, libpapi can be used for its
  'Performance Application Programming Interface (PAPI)' on suitable
  processors. On Debian and Ubuntu, libpapi-dev provides this library.
 Depends: R (>= 3.4.0)
